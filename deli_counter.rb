@@ -4,7 +4,7 @@ def line(katz_deli)
   if katz_deli.length == 0
     puts "The line is currently empty."
   else
-    katz_deli.each.with.index(1) do |value, index|
+    katz_deli.each.with_index(1) do |value, index|
       line_array.push("#{index}. #{value}")
     end
     puts "The line is currently: #{line_array.join(" ")}"
